@@ -1,0 +1,15 @@
+*.html
+*.png
+.irb-history
+.DS_Store
+.byebug_history
+Gemfile.lock
+.vscodes
+.idea
+*.dylib
+
+# Node Depedencies
+node_modules
+
+# Public Dependencies
+public/*
