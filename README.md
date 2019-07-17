@@ -14,14 +14,15 @@ c. Installing and Setting up rbenv:
    brew install rbenv
    echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
    rbenv install -l
-   rbenv install 2.4.0 #Ou versão superior estável
-   rbenv local 2.4.0
+   rbenv install 2.6.2
+   rbenv local 2.6.2
+   rbenv global 2.6.2
 
 d. Install Android Studio
    https://developer.android.com/studio/index.html?hl=pt-br
    
 e. Install Appium Desktop
-   http://appium.io/ => Click to download the newest version for your OS
+   http://appium.io/          => Click to download the newest version for your OS
 
    OR
 
