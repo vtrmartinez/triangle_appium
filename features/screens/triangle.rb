@@ -15,6 +15,18 @@ class Triangle
         @side3.displayed?
     end
 
+    def fill_side1(value)
+        @side1.send_keys(value)
+    end
+
+    def fill_side2(value)
+        @side2.send_keys(value)
+    end
+
+    def fill_side3(value)
+        @side3.send_keys(value)
+    end
+
     def calculate
         @calculate_button.click
     end
