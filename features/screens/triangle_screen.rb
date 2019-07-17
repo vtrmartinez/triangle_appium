@@ -1,4 +1,4 @@
-class Triangle
+class TriangleScreen
     include RSpec::Matchers
 
     def initialize
@@ -10,9 +10,9 @@ class Triangle
     end
 
     def verify_app_home
-        @side1.displayed?
-        @side2.displayed?
-        @side3.displayed?
+        expect(@side1.displayed?).to be true
+        expect(@side2.displayed?).to be true
+        expect(@side3.displayed?).to be true
     end
 
     def fill_side1(value)
@@ -31,7 +31,7 @@ class Triangle
         @calculate_button.click
     end
 
-    def validate_message(expected)
-        expect(@result.text).to include expected
+    def validate_message(expected_message)
+        expect(@result.text).to include expected_message
     end
 end
